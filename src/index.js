@@ -9,11 +9,11 @@ import cors from "cors";
 
 
 const app = express();
-app.use(cors({origin: 'https://ubiquitous-hummingbird-31c180.netlify.app/'}))
+app.use(cors({origin: 'https://ecomercefront.netlify.app'}))
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(routers)
-app.use(express.static(path.resolve("public")));
+// app.use(express.static(path.resolve("public")));
 app.listen(PORT || 3000);
 console.log("server port", PORT)
 
