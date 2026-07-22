@@ -1,6 +1,6 @@
 import { MercadoPagoConfig, Preference } from 'mercadopago';
-import nodemailer from "nodemailer";
 import axios from 'axios';
+import nodemailer from "nodemailer";
 
 export const paymentcontrollers = async (req, res) => {
 const client = new MercadoPagoConfig({ accessToken: process.env.MPTOKEN });    
