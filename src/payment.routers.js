@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 
 const router = Router();
 
-
+router.get('/ping', (req, res) => {res.status(200).send('pong');});
 router.post("/create-order", paymentcontrollers)
 router.post("/create-order/stripe", createPayment ) 
 router.get("/success", (req, res)=>{res.send("success")})
